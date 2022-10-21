@@ -1,0 +1,158 @@
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	padding: 50px;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 15px;
+	background-color: rgb(208, 233, 13);
+	z-index: 100;
+	margin-bottom: 30px;
+}
+
+.header__container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.header__menu {
+	margin: 0 auto;
+}
+
+.menu {
+	font-size: 0;
+}
+
+.menu__item {
+	position: relative;
+	display: inline-block;
+}
+
+.menu__item:not(:last-child) {
+	margin-right: 20px;
+}
+.menu__item:hover .sub-menu{
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+.menu__link {
+	font-size: 16px;
+	color: aliceblue;
+	display: inline-block;
+	padding: 5px 0px;
+}
+
+.sub-menu {
+	background-color: aquamarine;
+	padding: 15px;
+	position: absolute;
+	min-width: 180px;
+	top: 100%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+
+.sub-menu__item {
+	
+}
+
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.sub-menu__link {
+	font-size: 16px;
+	color: aliceblue;
+}
+
+.block-relative {
+	margin: 0 auto;
+	border: 5px solid crimson;
+	margin-top: 35px;
+	max-width: 800px;
+	height: 250px;
+	margin-bottom: 30px;
+}
+.block-relative div {
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+}
+.block-relative__1 {
+	background-color: #189AB4;
+	position: relative;
+	z-index: 1;
+}
+.block-relative__2 {
+	background-color: #05445E;
+	position: relative;
+	left: 10px;
+	bottom: 10px;
+}
+.block-relative__3 {
+	background-color: #75E6DA;
+}
+
+.block-absolute {
+	margin: 0 auto;
+	border: 5px solid rgb(172, 91, 5);
+	margin-top: 35px;
+	max-width: 800px;
+	height: 250px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.block-absolute div {
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+}
+.block-absolute__1 {
+	background: #7E6E13;
+	position: relative;
+	z-index: 1;
+	opacity: 0.6;
+}
+.block-absolute__2 {
+	background: #DBA40E;
+	position: absolute;
+	width: 100%;
+	right: 20px;
+	top: 30px;
+}
+.block-absolute__3 {
+	background: #FEDE00;
+}
+
+.car {
+	background: url('../img/ue5-bigger-worlds.png') 0 0/cover no-repeat;
+	height: 800px;
+	position: relative;
+
+	margin-bottom: 40px;
+}
+.car__car {
+	position: absolute;
+	bottom: 187px;
+	right: 179px;
+}
+
+.footer {
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+}
